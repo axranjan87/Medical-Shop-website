@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HealthyCare Medical Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>HealthyCare Medical Shop</h1>
+    <nav>
+      <a href="#products Name ">Products Name </a>
+      <a href="#contact">Contact</a>
+      <a href="#Gmail">Gmail</a>
+    </nav>
+  </header>
+
+  <div class="container" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Paracetamol" />
+        <h3>Paracetamol 500mg</h3>
+        <p>Used for relieving pain and fever.</p>
+        <div class="price">$5.00</div>
+        <button class="btn-buy" onclick="addToCart('Paracetamol 500mg')">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://cdn-icons-png.flaticon.com/512/183/183747.png" alt="Vitamin C" />
+        <h3>Vitamin C Tablets</h3>
+        <p>Boosts immune system and overall health.</p>
+        <div class="price">$10.00</div>
+        <button class="btn-buy" onclick="addToCart('Vitamin C Tablets')">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://cdn-icons-png.flaticon.com/512/2862/2862725.png" alt="Cough Syrup" />
+        <h3>Cough Syrup</h3>
+        <p>Effective relief for cough and throat irritation.</p>
+        <div class="price">$7.50</div>
+        <button class="btn-buy" onclick="addToCart('Cough Syrup')">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <label for="Address">Address:</label>
+      <textarea id="Address" name="Address" rows="4" required></textarea>
+
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 HealthyCare Medical Shop. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
